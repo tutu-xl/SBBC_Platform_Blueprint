@@ -2,7 +2,7 @@
 
 ## Planning principle
 
-SBBC should be delivered in phases. The first versions should create business value quickly without blocking long-term platform growth.
+SBBC should be delivered in phases. The current public website is already close to a usable first-generation brand site, so the next versions should build on that base rather than restart from zero.
 
 ## V0: Foundation and planning
 
@@ -26,100 +26,103 @@ Output:
 - Early wireframe direction
 - Build sequence
 
-## V1: Premium website + lead conversion + lightweight CMS
+## V1: Current website refinement + payment + basic portals
 
 Goal:
 
-- Upgrade the public experience and capture leads properly
+- Build on the current website and make the first operational version truly usable
 
 Includes:
 
-- New homepage
-- About / team / programs / contact pages
-- Program detail pages
-- Learning hub article system
-- SEO fields for articles and programs
-- Consultation form
-- Trial booking request form
-- Lead capture into CRM
-- Basic admin content management
+- Keep and refine the existing public website
+- Improve consultation and trial booking flow where needed
+- Add online payment for enrollment
+- Basic student portal
+- Basic teacher portal
+- Basic admin backend
+- Student profile and enrollment records
+- Lesson package / remaining credit tracking
+- Basic teacher-student assignment
+- Basic order and payment records
 
 Must-have outcomes:
 
-- Stronger premium branding
-- Better conversion funnel
-- Search-friendly structure
+- The public website stays usable and credible
+- Students can enroll and pay
+- Admins can manage core records
+- Teachers and students can start using their own portals
 
-## V2: Admin operations + CRM + student records
+## V2: CRM + academic operations + scheduling
 
 Goal:
 
-- Replace spreadsheet-style manual work with structured operations
+- Move daily academic operations and customer follow-up into a structured system
 
 Includes:
 
-- Admin dashboard
-- Leads pipeline
+- CRM pipeline for consultation customers
+- Customer service / consultant workflow
 - Student profiles
+- Teacher profiles
+- TA support workflow
 - Course and package management
-- Order / enrollment records
 - Lesson records
-- Credit tracking
-- Teacher records
+- Credit deduction / restoration
+- Scheduling support
+- Leave / makeup / cancellation handling
 - Notes and follow-up history
-- Basic email notifications
+- Basic notifications
 
 Must-have outcomes:
 
-- Centralized student and lead management
-- Reduced admin friction
-- Better visibility into operations
+- Centralized management of students, teachers, TAs, and consultation customers
+- Better scheduling and academic coordination
+- Reduced admin and teaching support friction
 
-## V3: Teacher workspace + student portal + finance basics
+## V3: Department dashboards + finance basics + workflow approvals
 
 Goal:
 
-- Bring teachers and students into the product, not only admins
+- Expand the system from daily operations into departmental management
 
 Includes:
 
-- Teacher dashboard
-- Teacher lesson agenda
-- Feedback submission workflow
-- Attendance marking
-- Student portal
-- Student schedule and history
-- Payment record view
-- Invoice / receipt display
+- Role-specific dashboards
+- Department lead dashboards
+- Academic operations dashboard
+- Finance dashboard
+- Founder / management dashboard
+- Expense reimbursement workflow
+- Basic OA-style approval flows
+- Invoice / receipt management
 - Certificate generation
+- Better analytics and reporting widgets
 
 Must-have outcomes:
 
-- Teachers can work from the system
-- Students can self-serve core needs
-- Better premium customer experience
+- Different roles can manage work through the same platform with different views
+- Finance and approval logic begin to work inside the system
+- Leadership gets clearer operational visibility
 
-## V4: Online learning and scheduling automation
+## V4: Online learning expansion
 
 Goal:
 
-- Expand SBBC into a hybrid or online-first learning platform
+- Extend SBBC from live teaching operations into online learning products when the business is ready
 
 Includes:
 
-- Teacher availability management
-- Student self-booking for eligible lessons
 - Recorded course library
 - Video hosting and access control
-- Live class join flow
-- Course completion tracking
-- Progress markers
-- Replay / recording access
+- Progress tracking
+- Learning completion markers
+- Optional quizzes or checkpoints later
+- Continued use of third-party live class links such as Zoom or Tencent Meeting
 
 Must-have outcomes:
 
-- Revenue can scale beyond manual class operations
-- Online products become practical
+- SBBC can launch structured recorded programs when ready
+- Online learning becomes a real second growth path
 
 ## V5 and later
 
@@ -135,7 +138,9 @@ Potential future scope:
 
 ## Recommended sequencing notes
 
-- V1 should not wait for full admin software
-- V2 should establish the core data model used by later portals
-- V3 should not be built before RBAC, audit logging, and stable student/course/lesson models exist
-- V4 should start only after access control, billing logic, and content storage patterns are stable
+- V1 should focus on making the current business flow work end-to-end
+- V1 does not need recorded courses
+- V1 should support the current teaching model: one-to-one and small-group live classes
+- V2 should establish the operational model for customer service, TAs, scheduling, and teaching support
+- V3 should not be built before RBAC, audit logging, and stable student/course/lesson/payment models exist
+- V4 should start only when SBBC is truly ready to invest in recorded-course operations

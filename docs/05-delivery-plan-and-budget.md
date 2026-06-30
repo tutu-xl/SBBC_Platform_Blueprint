@@ -69,30 +69,32 @@ Deliverables:
 
 These are planning-level estimates, not fixed quotes.
 
+Compared with the earlier rough estimate, the timelines below are intentionally extended to around 2x to 3x the original range. This is more realistic for a real product with revisions, QA, stakeholder feedback, permissions, and production hardening.
+
 ### V0
 
 - Product planning and architecture
-- Estimated effort: `1 to 2 weeks`
+- Estimated effort: `2 to 4 weeks`
 
 ### V1
 
-- Premium website, programs, content, forms, lead intake
-- Estimated effort: `3 to 6 weeks`
+- Current website refinement, payment, basic admin backend, student portal, teacher portal
+- Estimated effort: `6 to 15 weeks`
 
 ### V2
 
-- Admin dashboard, CRM, student records, lesson credits
-- Estimated effort: `4 to 8 weeks`
+- CRM, customer service workflow, student records, course packages, lesson credits, scheduling support
+- Estimated effort: `8 to 20 weeks`
 
 ### V3
 
-- Teacher dashboard, student portal, finance basics, certificates
-- Estimated effort: `4 to 8 weeks`
+- Department dashboards, finance basics, approvals, reporting, certificates
+- Estimated effort: `8 to 20 weeks`
 
 ### V4
 
-- Recorded courses, live classes, booking automation
-- Estimated effort: `6 to 12 weeks`
+- Recorded courses, progress tracking, online learning expansion
+- Estimated effort: `12 to 30 weeks`
 
 ## 4. Development team shapes
 
@@ -121,29 +123,82 @@ Best for:
 
 Below is a rough planning model in AUD.
 
-### Option A: lean staged build
+These figures are framed in two layers:
 
-- V0 planning: `AUD 2,000 to 5,000`
-- V1 build: `AUD 8,000 to 18,000`
-- V2 build: `AUD 12,000 to 25,000`
-- V3 build: `AUD 12,000 to 25,000`
-- V4 build: `AUD 18,000 to 40,000`
+- Market reference price: a reasonable current-market custom software delivery range
+- Suggested discounted price: roughly 70% of the market reference range
+
+This is intended as a practical commercial positioning model rather than a fixed quote.
+
+### Market reference price
+
+#### Lean staged build
+
+- V0 planning: `AUD 4,000 to 8,000`
+- V1 build: `AUD 18,000 to 35,000`
+- V2 build: `AUD 25,000 to 50,000`
+- V3 build: `AUD 25,000 to 50,000`
+- V4 build: `AUD 40,000 to 80,000`
 
 Program total if all phases are completed:
 
-- Roughly `AUD 52,000 to 113,000`
+- Roughly `AUD 112,000 to 223,000`
 
-### Option B: stronger production-grade delivery
+#### Stronger production-grade delivery
 
-- V0 planning and architecture: `AUD 4,000 to 8,000`
-- V1: `AUD 15,000 to 30,000`
-- V2: `AUD 20,000 to 40,000`
-- V3: `AUD 20,000 to 40,000`
-- V4: `AUD 30,000 to 60,000`
+- V0 planning and architecture: `AUD 6,000 to 12,000`
+- V1: `AUD 28,000 to 55,000`
+- V2: `AUD 40,000 to 75,000`
+- V3: `AUD 40,000 to 75,000`
+- V4: `AUD 60,000 to 120,000`
 
 Program total:
 
-- Roughly `AUD 89,000 to 178,000`
+- Roughly `AUD 174,000 to 337,000`
+
+### Suggested discounted price at about 70%
+
+#### Lean staged build
+
+- V0 planning: `AUD 2,800 to 5,600`
+- V1 build: `AUD 12,600 to 24,500`
+- V2 build: `AUD 17,500 to 35,000`
+- V3 build: `AUD 17,500 to 35,000`
+- V4 build: `AUD 28,000 to 56,000`
+
+Program total if all phases are completed:
+
+- Roughly `AUD 78,400 to 156,100`
+
+#### Stronger production-grade delivery
+
+- V0 planning and architecture: `AUD 4,200 to 8,400`
+- V1: `AUD 19,600 to 38,500`
+- V2: `AUD 28,000 to 52,500`
+- V3: `AUD 28,000 to 52,500`
+- V4: `AUD 42,000 to 84,000`
+
+Program total:
+
+- Roughly `AUD 121,800 to 235,900`
+
+## 5.1 Pricing rationale
+
+The ranges above are informed by current public Australia market references and then translated into project pricing.
+
+Reference signals used:
+
+- SEEK reports Software Engineer salaries in Australia at about `AUD 105,000 to 125,000` on average
+- SEEK reports Web Developer salaries in Australia at about `AUD 80,000 to 100,000`
+- PayScale reports an average Software Developer salary in Australia around `AUD 79,830`
+
+How this translates into project pricing:
+
+- A project is not priced at salary only
+- Real delivery cost includes design, meetings, revisions, QA, deployment, project coordination, and business risk
+- Agencies and consultants usually price significantly above raw salary-equivalent time
+
+So the project budget above is positioned as a realistic custom-build market range, and the discounted range represents a founder-friendly or relationship-based offer at about 70% of that level
 
 ## 6. Recommended budgeting logic
 
@@ -170,3 +225,8 @@ Program total:
 - User journeys
 - V1 wireframes
 - Content inventory from the current website
+
+## Sources
+
+- [SEEK Software Engineer salary](https://au.seek.com/career-advice/role/software-engineer/salary)
+- [PayScale Software Developer salary in Australia](https://www.payscale.com/research/AU/Job=Software_Developer/Salary)
