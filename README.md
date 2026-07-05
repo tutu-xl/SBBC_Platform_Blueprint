@@ -24,6 +24,7 @@ The goal of this repository is to keep product planning, architecture decisions,
 3. [docs/03-architecture-and-portal-strategy.md](./docs/03-architecture-and-portal-strategy.md)
 4. [docs/04-services-cost-estimate.md](./docs/04-services-cost-estimate.md)
 5. [docs/05-delivery-plan-and-budget.md](./docs/05-delivery-plan-and-budget.md)
+6. [docs/06-open-questions.md](./docs/06-open-questions.md)
 
 ## Chinese versions
 
@@ -32,6 +33,7 @@ The goal of this repository is to keep product planning, architecture decisions,
 3. [docs/zh/03-架构与门户策略.md](./docs/zh/03-%E6%9E%B6%E6%9E%84%E4%B8%8E%E9%97%A8%E6%88%B7%E7%AD%96%E7%95%A5.md)
 4. [docs/zh/04-技术栈服务与成本估算.md](./docs/zh/04-%E6%8A%80%E6%9C%AF%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%B8%8E%E6%88%90%E6%9C%AC%E4%BC%B0%E7%AE%97.md)
 5. [docs/zh/05-开发流程与预算.md](./docs/zh/05-%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E4%B8%8E%E9%A2%84%E7%AE%97.md)
+6. [docs/zh/06-需要注意的问题.md](./docs/zh/06-%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E9%97%AE%E9%A2%98.md)
 
 ## Current recommendation
 
@@ -43,3 +45,18 @@ At the beginning, build one platform with:
 - Separate role-based experiences for public users, students, teachers, and admins
 
 This gives strong isolation in permissions and user experience without creating unnecessary operational complexity too early.
+
+## Common abbreviations
+
+- Product Requirements Document (PRD)
+- Search Engine Optimization (SEO)
+- Customer Relationship Management (CRM)
+- Learning Management System (LMS)
+- User Experience (UX)
+- User Interface (UI)
+- Call to Action (CTA)
+- Role-Based Access Control (RBAC)
+- Quality Assurance (QA)
+- User Acceptance Testing (UAT)
+- Continuous Integration / Continuous Delivery (CI/CD)
+- Entity Relationship Diagram (ERD)

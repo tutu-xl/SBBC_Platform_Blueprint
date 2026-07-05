@@ -50,14 +50,14 @@ This keeps the user experience separated even when the codebase is shared.
 
 ## 4. Teacher portal recommendation
 
-Teacher portal should be logically independent in UX, but not a completely separate technical system in V1-V3.
+Teacher portal should be logically independent in User Experience (UX), but not a completely separate technical system in V1-V3.
 
 Recommendation:
 
 - Separate navigation
 - Separate page routes
 - Separate permission scope
-- Separate API guards
+- Separate Application Programming Interface (API) guards
 - Shared backend and infra
 
 Reason:
@@ -88,32 +88,44 @@ Student portal should eventually include:
 
 ## 6. Suggested tech stack
 
+This section describes the recommended direction only. It does not mean every tool must be adopted in the first phase. Early versions should prioritize mature, low-maintenance choices that leave room for later expansion.
+
 ### Frontend
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Component library built from a custom design system
+- Use Next.js as the main framework so the public site, admin backend, teacher workspace, and student portal can share one technical foundation
+- Use TypeScript to improve long-term maintainability and reduce regression risk
+- Use Tailwind CSS and gradually build shared UI patterns for buttons, forms, tables, cards, and navigation
+- Add an appropriate charting library during the BI dashboard phase for revenue, enrollment, course, and event analytics
 
 ### Backend
 
-- Next.js server actions / route handlers for light workflows
-- Supabase for Postgres, auth, storage, and realtime
-- Background jobs via Inngest or Trigger.dev if workflow complexity grows
+- Use Supabase as the baseline backend for database, authentication, file storage, and realtime capability
+- Keep lightweight business logic in Next.js backend capabilities first, so the early architecture does not become too heavy
+- Combine role permissions and database-level controls so students, teachers, TAs, and admins can only access the right data
+- Do not introduce complex workflow tooling at the start; evaluate dedicated workflow tools later if automated reminders, approvals, sync, or retry flows become complex
+
+### Analytics & Search Engine Optimization (SEO)
+
+- Consider basic SEO from the first phase so program pages, article pages, and brand pages have clear titles, descriptions, and page structure
+- Connect Google Search Console to monitor Google indexing, search keywords, and page performance
+- Choose a website analytics tool as needed, such as Google Analytics 4, Umami, or PostHog, to understand traffic, sources, page performance, and key conversion actions
+- Generate Sitemap and Robots.txt automatically so search engines can crawl the site correctly
+- Manage page titles, descriptions, image alt text, and structured data consistently to improve search presentation
 
 ### Content
 
-- Use the application database for courses and structured CMS data
-- Optionally use MDX or a headless CMS later if editorial workflow becomes more complex
+- Store courses, articles, and structured content in the application database first, so they can connect naturally with enrollment, course, and student data
+- Consider a fuller Content Management System (CMS) later if editorial approval, multilingual publishing, or content operations become more complex
 
 ### Payments
 
-- Stripe for card payments and subscriptions
-- Optional second payment path later if Chinese payment channels become necessary
+- Prioritize online payment methods that fit Australian operations and support enrollment and course payment flows
+- Evaluate a second payment path later if Chinese payment channels become necessary
 
 ### Email
 
-- Resend for transactional email
+- Email service is mainly used for registration, enrollment, payment, and class reminder emails
+- The exact email provider can be selected based on cost, deliverability, and maintenance convenience
 
 ### Video and live classes
 
@@ -125,28 +137,37 @@ Two recommended paths:
 ### Hosting
 
 - Vercel for app hosting
-- Cloudflare for DNS, CDN, and WAF layer
+- Cloudflare for Domain Name System (DNS), Content Delivery Network (CDN), and Web Application Firewall (WAF) layer
 
-## 7. Domain model to stabilize early
+## 7. Domain model to define early
 
-The following entities should be designed carefully in V0/V1 because they affect every later phase:
+The data model should stay aligned with the roadmap. V0/V1 does not need to implement every entity in full, but the core relationships should be designed early so later CRM, academic operations, finance, and recorded-learning modules do not require major rewrites.
+
+### Must be stable in V0/V1
 
 - User
 - Role
 - Student
-- Parent / guardian
 - Teacher
-- Lead
+- Teaching assistant
 - Program / course
 - Enrollment / order
 - Lesson package
+- Payment
+
+### Reserve and expand in V2
+
+- Parent / guardian: contact relationship first; whether this becomes a separate login role requires confirmation
+- Consultation lead / prospect record: for CRM, trial booking, and enrollment follow-up
 - Lesson session
 - Attendance
 - Feedback
-- Payment
-- Invoice / receipt
-- Video asset
-- Certificate
+
+### Expand in V3/V4
+
+- Invoice / receipt: for finance basics
+- Certificate: for automated certificate generation
+- Video asset: for the recorded-learning phase
 
 ## 8. Security and permission model
 
@@ -168,7 +189,7 @@ Suggested app structure:
 
 - `apps/web` for public site and app shell
 - `packages/ui` for shared components
-- `packages/config` for shared config
 - `packages/types` for shared types
+- `packages/config` for shared config
 
 This is optional in V1. A single well-structured app repository is also acceptable if the team is small.

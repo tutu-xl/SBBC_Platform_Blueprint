@@ -9,7 +9,7 @@ Recommended approach:
 - Plan clearly in V0
 - Launch public value in V1
 - Build internal operations in V2
-- Open teacher and student product surfaces in V3
+- Expand BI, finance, approvals, and management dashboards in V3
 - Expand into online learning in V4
 
 ## 2. Suggested development workflow
@@ -19,7 +19,7 @@ Recommended approach:
 Deliverables:
 
 - Product scope definition
-- PRD
+- PRD (Product Requirements Document)
 - Sitemap and module map
 - Role and permission model
 - Data model draft
@@ -27,7 +27,7 @@ Deliverables:
 - Cost estimate
 - Delivery roadmap
 
-### Phase 1: UX and design
+### Phase 1: UX (User Experience) and design
 
 Deliverables:
 
@@ -41,10 +41,10 @@ Deliverables:
 
 Deliverables:
 
-- Repository and CI/CD
+- Repository and CI/CD (Continuous Integration / Continuous Delivery)
 - Environments
 - Database schema
-- Auth and RBAC foundation
+- Auth and RBAC (Role-Based Access Control) foundation
 - Shared UI primitives
 
 ### Phase 3: implementation by version
@@ -52,16 +52,16 @@ Deliverables:
 Deliverables:
 
 - V1 website and conversion
-- V2 admin and CRM
-- V3 teacher and student portal
+- V2 admin and CRM (Customer Relationship Management)
+- V3 BI dashboards, finance basics, approvals, and management reporting
 - V4 online learning
 
-### Phase 4: QA and go-live
+### Phase 4: QA (Quality Assurance) and go-live
 
 Deliverables:
 
 - Test plans
-- UAT
+- UAT (User Acceptance Testing)
 - Production launch
 - Monitoring and post-launch fixes
 
@@ -69,7 +69,7 @@ Deliverables:
 
 These are planning-level estimates, not fixed quotes.
 
-Compared with the earlier rough estimate, the timelines below are intentionally extended to around 2x to 3x the original range. This is more realistic for a real product with revisions, QA, stakeholder feedback, permissions, and production hardening.
+Compared with the earlier rough estimate, the timelines below are intentionally extended to around 2x to 3x the original range. This is more realistic for a real product with revisions, Quality Assurance (QA), stakeholder feedback, permissions, and production hardening.
 
 ### V0
 
@@ -78,7 +78,7 @@ Compared with the earlier rough estimate, the timelines below are intentionally 
 
 ### V1
 
-- Current website refinement, payment, basic admin backend, student portal, teacher portal
+- Current website refinement, payment, basic admin backend, student portal, teacher portal, basic teaching assistant / operations support workspace
 - Estimated effort: `6 to 15 weeks`
 
 ### V2
@@ -113,7 +113,7 @@ Best for:
 - 1 product lead
 - 1 designer
 - 2 engineers
-- QA support part-time
+- Quality Assurance (QA) support part-time
 
 Best for:
 
@@ -195,7 +195,7 @@ Reference signals used:
 How this translates into project pricing:
 
 - A project is not priced at salary only
-- Real delivery cost includes design, meetings, revisions, QA, deployment, project coordination, and business risk
+- Real delivery cost includes design, meetings, revisions, Quality Assurance (QA), deployment, project coordination, and business risk
 - Agencies and consultants usually price significantly above raw salary-equivalent time
 
 So the project budget above is positioned as a realistic custom-build market range, and the discounted range represents a founder-friendly or relationship-based offer at about 70% of that level
@@ -212,7 +212,7 @@ So the project budget above is positioned as a realistic custom-build market ran
 - Frequent product direction changes
 - Late finance requirements
 - Custom payment workflows
-- Advanced LMS requirements
+- Advanced Learning Management System (LMS) requirements
 - Multi-language editorial complexity
 - Migration from current site if code quality is inconsistent
 - Building native live-class features too early
@@ -221,7 +221,7 @@ So the project budget above is positioned as a realistic custom-build market ran
 
 - Formal sitemap
 - Role-permission matrix
-- Database ERD
+- Database Entity Relationship Diagram (ERD)
 - User journeys
 - V1 wireframes
 - Content inventory from the current website

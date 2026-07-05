@@ -11,7 +11,7 @@ The exact stack should stay lean at the beginning. Do not buy everything up fron
 ### Core
 
 - Vercel: application hosting
-- Cloudflare: DNS, WAF, domain layer
+- Cloudflare: Domain Name System (DNS), Web Application Firewall (WAF), domain layer
 - Supabase: database, auth, storage, realtime
 - Resend: transactional email
 - Stripe: online payment
@@ -93,7 +93,7 @@ Assumption:
 
 - One main production app
 - Low to moderate traffic
-- CRM and forms active
+- Customer Relationship Management (CRM) and forms active
 - No built-in live/video platform yet
 
 Estimated monthly tools cost:
@@ -153,7 +153,7 @@ Estimated total:
 
 Buy in this order:
 
-1. Domain and DNS
+1. Domain and Domain Name System (DNS)
 2. Hosting
 3. Database/auth
 4. Transactional email
@@ -163,9 +163,9 @@ Buy in this order:
 ## 7. Services SBBC probably does not need immediately
 
 - Enterprise observability tools
-- Separate BI warehouse
+- Separate Business Intelligence (BI) warehouse
 - Dedicated search engine cluster
-- Full LMS vendor subscription
+- Full Learning Management System (LMS) vendor subscription
 - Separate finance ERP
 
 ## 8. Source links

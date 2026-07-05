@@ -1,21 +1,42 @@
-# SBBC Product PRD
+# SBBC Product Requirements Document (PRD)
+
+This document defines WHAT the platform does. For WHEN each capability ships, see [02-roadmap-v0-v4.md](./02-roadmap-v0-v4.md). For HOW it is built, see [03-architecture-and-portal-strategy.md](./03-architecture-and-portal-strategy.md).
 
 ## 1. Product definition
 
 SBBC should be planned as a platform, not only as a website.
 
-The platform will cover:
+The platform scope can be grouped into the following areas:
+
+**Public brand, content, and acquisition**
 
 - Public-facing brand website
-- Content and SEO system
+- Content Management System (CMS) with native Search Engine Optimization (SEO) support
 - Consultation and trial-lesson conversion flow
-- CRM for lead management
+- Merchandise showcase on the main site, with purchase handled by a separate `SBBC Store`
+
+**Enrollment and conversion**
+
+- Customer Relationship Management (CRM) for consultation lead / prospect record management
+- Trial booking and follow-up workflow
 - Student enrollment and payment
-- Admin dashboard and academic operations
-- Teacher dashboard
+
+**Teaching and daily operations**
+
+- Admin backend
+- Academic operations
+- Teacher workspace
 - Student portal
+
+**Data, finance, and management reporting**
+
 - Financial records and reporting
-- Online learning delivery for pre-recorded and live courses
+- Business Intelligence (BI) dashboards and management analytics
+
+**Future learning capability expansion**
+
+- Pre-recorded learning capability
+- Live online learning capability
 
 ## 2. Product goals
 
@@ -33,41 +54,42 @@ The platform will cover:
 - Make the internal system practical for daily operations
 - Let students manage learning and payments in one place
 - Let teachers complete teaching tasks with minimal friction
-- Preserve room for later finance, LMS, and automation features
+- Preserve room for later finance, Learning Management System (LMS), and automation features
 
 ## 3. Core user roles
 
 - Visitor: reads content, browses programs, submits consultation or trial request
-- Lead: has submitted a form and entered CRM
-- Student: enrolled learner with portal access
+- Student: enrolled learner who can log into the student portal to view courses, lesson credits, timetable, feedback, and payment records
 - Parent: associated contact for minors
 - Teacher: sees only assigned students, classes, and feedback tasks
-- Teaching assistant: operational support with limited access
+- Teaching assistant (TA): operational support with limited access, including assigned consultation lead follow-up
 - Admin: manages students, lessons, CRM, and content
 - Super admin: manages platform settings, permissions, finance rules, and audit logs
 
+Note: a "Lead" means a consultation lead / prospect record in CRM, not a login role.
+
 ## 4. Core domains
 
-### 4.1 Public website
+### 4.1 Public website and brand
 
 - Home
-- Programs
-- Program detail pages
-- Learning hub / articles
-- About SBBC
-- Faculty / teaching team
-- Consultation booking
-- Trial lesson booking
+- Programs and program detail pages
+- Learning hub / articles / news
+- About SBBC and faculty team
+- Consultation and trial booking
 - Contact / WeChat / social links
+- Merchandise showcase and `SBBC Store` referral entry
+- The main SBBC site only showcases and refers; product checkout, inventory, and fulfillment stay outside the main platform
 
 ### 4.2 CRM and conversion
 
-- Leads inbox
+- Consultation lead / prospect record inbox
 - Source tracking
 - Consultation records
 - Trial booking workflow
 - Follow-up status pipeline
 - Enrollment conversion tracking
+- Teaching assistant / operations assignment for follow-up
 
 ### 4.3 Student management
 
@@ -105,16 +127,16 @@ The platform will cover:
 - Teacher feedback
 - Homework
 - Billing and invoices
-- Trial status or enrollment status
 - Recorded courses
 - Live course access
+- Points balance and earning history
 
-### 4.7 Content and CMS
+### 4.7 Public content CMS (SEO-native)
 
-- Article editor
-- SEO fields
-- Slug management
-- Cover images
+- Article and program editor
+- Search Engine Optimization (SEO) fields per page
+- URL slug management
+- Cover images and media management
 - Program highlights
 - Reading analytics
 
@@ -135,22 +157,33 @@ The platform will cover:
 - Session replay or recording access
 - Learning completion milestones
 
+### 4.10 Points and merchandise showcase
+
+- Because a school entity may not be the right operating body for merchandise sales, `SBBC Store` should be considered as a separate website or separate company for merchandise sales
+- The SBBC main site only provides merchandise showcase and referral entry points, and does not directly handle merchandise checkout, inventory, shipping, or after-sales support
+- When users click a merchandise entry, they are redirected to the independent `SBBC Store` to complete the purchase
+- Student points account
+- Point earning rules and earning history
+- Points can be earned from course enrollment, classroom performance, competition results, and other sources; different sources may use different point rules
+- Points are recorded in the student portal first; redemption ships in a later version
+- Future versions can define how points connect with `SBBC Store`, such as vouchers, redemption codes, or other redemption flows
+
 ## 5. Functional requirements
 
 ### 5.1 Public site requirements
 
 - Strong premium positioning and trust-building
 - Mobile-friendly Chinese and English presentation
-- Clear CTA for consultation and trial booking
+- Clear Call to Action (CTA) for consultation and trial booking
 - Program tagging and filtering
 - Search-engine-friendly article and program pages
 
 ### 5.2 CRM requirements
 
-- Lead sources: website, WeChat, Xiaohongshu,公众号, manual import
-- Lead statuses: new, contacted, trial booked, trial completed, enrolled, lost
+- Consultation lead sources: website, WeChat, Xiaohongshu, WeChat Official Account, manual import
+- Consultation lead statuses: new, contacted, trial booked, trial completed, enrolled, lost
 - Notes and follow-up history
-- Owner assignment
+- Owner assignment, including Teaching Assistant (TA) or operations staff where appropriate
 - Latest activity tracking
 
 ### 5.3 Student profile requirements
@@ -164,7 +197,7 @@ The platform will cover:
 - Current course
 - Remaining credits
 - Course start and end date
-- Assigned teacher and TA
+- Assigned teacher and Teaching Assistant (TA)
 - Attendance log
 - Feedback log
 - Homework log
@@ -195,20 +228,21 @@ The platform will cover:
 - Enrollment status and active programs
 - Remaining lesson credits
 - Learning history
-- Homework and class notes
+- Feedback history
+- Payment and invoice records
 - Download certificates
 - Watch recorded lessons
 - Join live classes
-- View payment history
+- View points balance and earning history
 
 ### 5.7 Admin dashboard requirements
 
-- Monthly new students
-- Active students
-- Monthly revenue
-- Monthly lessons
-- Latest leads
-- Content statistics
+- View monthly new students, active students, and enrolled students
+- View latest inquiries, trial bookings, and enrollment conversion status
+- View course, lesson, scheduling, and teacher work summaries
+- View basic revenue, order, and payment records
+- View content, website traffic, and event data summaries
+- Expand into deeper Business Intelligence (BI) dashboards in later versions, as defined in the roadmap
 
 ### 5.8 Course management requirements
 
@@ -221,14 +255,17 @@ The platform will cover:
 - Program description
 - Delivery mode: in-person, online live, recorded, hybrid
 
-### 5.9 Content requirements
+### 5.9 Content requirements (SEO-native)
 
 - Meta title
 - Meta description
-- Slug
+- URL slug management
 - Author
 - Category
 - Views
+- Image alt text
+- Structured data (Schema.org)
+- Bilingual page mapping
 
 ### 5.10 Certificate requirements
 
@@ -246,49 +283,16 @@ The platform will cover:
 - Data backup and recovery
 - Good performance on mobile
 - Clean admin UX for Chinese-speaking operators
-- Scalable architecture for future LMS and finance modules
+- Scalable architecture for future Learning Management System (LMS) and finance modules
 
-## 7. Out of scope for the very first release
+## 7. Scope phasing
 
-- Full accounting system
-- Deep BI or custom data warehouse
-- Enterprise multi-tenant support
-- Complex affiliate / commission system
-- Native mobile apps
+This PRD describes the full platform scope. Which capabilities ship in which version — and what is explicitly excluded from V1 — is maintained in [02-roadmap-v0-v4.md](./02-roadmap-v0-v4.md) only, to avoid duplicated and conflicting scope lists.
 
-## 8. Product decision: separate teacher and student portals or not?
+## 8. Portal and architecture decisions
 
-Recommendation:
+Whether teacher/student portals are separate systems, the URL structure, and the shared-backend rationale are architecture decisions, maintained in [03-architecture-and-portal-strategy.md](./03-architecture-and-portal-strategy.md).
 
-- Separate teacher and student experiences
-- Shared platform backend
-- Shared authentication service
-- Shared database
-- Different route groups or sub-apps
+## 9. Open questions
 
-Recommended URL structure in the early stages:
-
-- `www.sbbc.com.au` for public site
-- `app.sbbc.com.au` for authenticated product
-- `app.sbbc.com.au/student/*` for student portal
-- `app.sbbc.com.au/teacher/*` for teacher workspace
-- `app.sbbc.com.au/admin/*` for admin workspace
-
-Reason:
-
-- Better permission isolation than one mixed dashboard
-- Cleaner UX for each role
-- Easier to scale later
-- Lower operational complexity than maintaining multiple independent systems
-
-Not recommended for V0/V1:
-
-- Completely separate products with separate backends
-- Separate databases for student, teacher, and admin from day one
-
-## 9. Open decisions to confirm later
-
-- Payment gateway choice for Australia and Chinese users
-- Whether parent accounts are first-class users
-- Whether live classes are hosted inside the platform or linked from third-party tools
-- Whether recorded courses require progress tracking and quizzes in V2 or later
+All pending product decisions (payment gateways, parent accounts, live-class hosting, etc.) are tracked in [06-open-questions.md](./06-open-questions.md).
