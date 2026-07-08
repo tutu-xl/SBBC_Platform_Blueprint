@@ -47,6 +47,7 @@ Includes:
 - Support the current core teaching model: one-to-one and small-group live classes
 - Use third-party live class links such as Zoom or Tencent Meeting in the early stage
 - Basic student portal
+- Basic parent / guardian payment and confirmation flow
 - Basic teacher portal
 - Basic teaching assistant / operations support workspace
 - Basic admin backend
@@ -59,9 +60,10 @@ Includes:
 Must-have outcomes:
 
 - The public website stays usable and credible
-- Students can enroll and pay
+- Adult students can enroll, pay, and manage orders and invoices themselves
+- Underage students can start enrollment / select courses, while payment, confirmation, and terms acceptance are completed by a parent or guardian
 - Admins can manage core records
-- Teachers, students, and teaching assistants can start using their own workspaces
+- Teachers, students, parents / guardians, and teaching assistants can start using their own workspaces or basic workflows
 - Teaching assistants can support basic consultation follow-up, student information review, and operations tasks
 
 ## V1 explicit exclusions
@@ -74,7 +76,7 @@ The following capabilities are intentionally not included in V1:
 - Main-site merchandise showcase and `SBBC Store` referral flow
 - Student points account and earning history
 - Points redemption or merchandise exchange flow
-- Parent portal
+- Full parent portal
 - Advanced finance reporting
 - Advanced automation and workflow approvals
 - Native mobile app

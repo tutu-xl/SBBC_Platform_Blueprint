@@ -7,13 +7,13 @@ It is intentionally separate from the PRD, roadmap, and architecture docs so we 
 ## 1. Payments and minors
 
 - The payment method mix needs confirmation, including Australian local payment methods, card payments, and payment methods familiar to Chinese users.
-- Payment for underage students needs a separate flow decision: should a parent or guardian always pay or confirm, or can the student complete part of the process independently?
+- The student portal needs to distinguish adult and underage students: adult students can enroll, pay, and manage orders and invoices themselves; underage students can start enrollment / select courses, but payment, terms acceptance, privacy policy acceptance, and minor-related confirmations should be completed by a parent or guardian.
 
 ## 2. Parent accounts
 
-- Whether parent accounts should be treated as a first-class role needs to be decided together with the student portal, payment flow, and notification permissions.
-- Whether to build a dedicated parent portal needs separate confirmation and should not be assumed as a fixed later-phase scope.
-- The split between student and parent access needs to be clear: what students can view, what parents can view, and which actions require parent confirmation.
+- Parent / guardian accounts need to be included in the permission design and aligned with the student portal, payment flow, and notification permissions.
+- The launch phase and boundaries of a full parent portal still need confirmation; early versions should at least support payment, confirmation, notifications, and learning supervision for underage students.
+- Student and parent access boundaries need further page-level detail: the student side focuses on courses, timetable, lesson credits, feedback, learning materials, and points; the parent side focuses on payment, terms acceptance, notifications, refunds, invoices, billing, and learning supervision.
 
 ## 3. Live and recorded learning
 

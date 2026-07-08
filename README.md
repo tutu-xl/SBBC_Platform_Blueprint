@@ -25,6 +25,8 @@ The goal of this repository is to keep product planning, architecture decisions,
 4. [docs/04-services-cost-estimate.md](./docs/04-services-cost-estimate.md)
 5. [docs/05-delivery-plan-and-budget.md](./docs/05-delivery-plan-and-budget.md)
 6. [docs/06-open-questions.md](./docs/06-open-questions.md)
+7. [docs/07-terms-of-service-draft.md](./docs/07-terms-of-service-draft.md)
+8. [docs/08-privacy-policy-draft.md](./docs/08-privacy-policy-draft.md)
 
 ## Chinese versions
 
@@ -34,6 +36,8 @@ The goal of this repository is to keep product planning, architecture decisions,
 4. [docs/zh/04-技术栈服务与成本估算.md](./docs/zh/04-%E6%8A%80%E6%9C%AF%E6%A0%88%E6%9C%8D%E5%8A%A1%E4%B8%8E%E6%88%90%E6%9C%AC%E4%BC%B0%E7%AE%97.md)
 5. [docs/zh/05-开发流程与预算.md](./docs/zh/05-%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E4%B8%8E%E9%A2%84%E7%AE%97.md)
 6. [docs/zh/06-需要注意的问题.md](./docs/zh/06-%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E9%97%AE%E9%A2%98.md)
+7. [docs/zh/07-服务条款草案.md](./docs/zh/07-%E6%9C%8D%E5%8A%A1%E6%9D%A1%E6%AC%BE%E8%8D%89%E6%A1%88.md)
+8. [docs/zh/08-隐私政策草案.md](./docs/zh/08-%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E8%8D%89%E6%A1%88.md)
 
 ## Current recommendation
 

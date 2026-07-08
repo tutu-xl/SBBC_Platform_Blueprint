@@ -27,6 +27,7 @@ The platform scope can be grouped into the following areas:
 - Academic operations
 - Teacher workspace
 - Student portal
+- Parent / guardian portal
 
 **Data, finance, and management reporting**
 
@@ -59,8 +60,8 @@ The platform scope can be grouped into the following areas:
 ## 3. Core user roles
 
 - Visitor: reads content, browses programs, submits consultation or trial request
-- Student: enrolled learner who can log into the student portal to view courses, lesson credits, timetable, feedback, and payment records
-- Parent: associated contact for minors
+- Student: enrolled learner who can log into the student portal to view courses, lesson credits, timetable, feedback, payment status, learning materials, and points; the student portal should distinguish adult and underage students. Adult students can enroll, pay, and manage orders and invoices themselves. Underage students can start enrollment / select courses, but cannot complete payment; payment, confirmation, and terms acceptance must be completed by a parent or guardian
+- Parent: parent or guardian of an underage student, responsible for paying for the student's enrolled courses, accepting terms and privacy policies, handling billing and notifications, and supervising learning progress
 - Teacher: sees only assigned students, classes, and feedback tasks
 - Teaching assistant (TA): operational support with limited access, including assigned consultation lead follow-up
 - Admin: manages students, lessons, CRM, and content
@@ -130,8 +131,20 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Recorded courses
 - Live course access
 - Points balance and earning history
+- Adult students can enroll, pay, and manage orders and invoices themselves
+- Underage students can start enrollment / select courses, but cannot complete payment
+- Payment, confirmation, and terms acceptance for underage students must be completed by a parent or guardian
 
-### 4.7 Public content CMS (SEO-native)
+### 4.7 Parent / guardian portal
+
+- Complete payment for underage students' course enrollment
+- Accept the terms of service, privacy policy, and minor-related confirmations
+- View the student's timetable, lesson credits, feedback, and learning progress
+- Receive payment, renewal, absence, and makeup-lesson notifications
+- Handle refunds, invoices, and billing
+- Supervise the student's learning progress
+
+### 4.8 Public content CMS (SEO-native)
 
 - Article and program editor
 - Search Engine Optimization (SEO) fields per page
@@ -140,7 +153,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Program highlights
 - Reading analytics
 
-### 4.8 Finance
+### 4.9 Finance
 
 - Payment records
 - Enrollment orders
@@ -149,7 +162,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Revenue dashboard
 - Outstanding balances
 
-### 4.9 Online learning
+### 4.10 Online learning
 
 - Pre-recorded lessons
 - Video progress tracking
@@ -157,7 +170,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Session replay or recording access
 - Learning completion milestones
 
-### 4.10 Points and merchandise showcase
+### 4.11 Points and merchandise showcase
 
 - Because a school entity may not be the right operating body for merchandise sales, `SBBC Store` should be considered as a separate website or separate company for merchandise sales
 - The SBBC main site only provides merchandise showcase and referral entry points, and does not directly handle merchandise checkout, inventory, shipping, or after-sales support
@@ -234,8 +247,20 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Watch recorded lessons
 - Join live classes
 - View points balance and earning history
+- Adult students can enroll, pay, and manage orders and invoices themselves
+- Underage students can start enrollment / select courses, but cannot complete payment
+- Payment, confirmation, and terms acceptance for underage students must be completed by a parent or guardian
 
-### 5.7 Admin dashboard requirements
+### 5.7 Parent / guardian portal requirements
+
+- Complete payment for underage students' course enrollment
+- Accept the terms of service, privacy policy, and minor-related confirmations
+- View the student's timetable, lesson credits, feedback, and learning progress
+- Receive payment, renewal, absence, and makeup-lesson notifications
+- Handle refunds, invoices, and billing
+- Supervise the student's learning progress
+
+### 5.8 Admin dashboard requirements
 
 - View monthly new students, active students, and enrolled students
 - View latest inquiries, trial bookings, and enrollment conversion status
@@ -244,7 +269,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - View content, website traffic, and event data summaries
 - Expand into deeper Business Intelligence (BI) dashboards in later versions, as defined in the roadmap
 
-### 5.8 Course management requirements
+### 5.9 Course management requirements
 
 - Course title
 - Tags: HSK, Business Chinese, VIP, Executive, Children
@@ -255,7 +280,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Program description
 - Delivery mode: in-person, online live, recorded, hybrid
 
-### 5.9 Content requirements (SEO-native)
+### 5.10 Content requirements (SEO-native)
 
 - Meta title
 - Meta description
@@ -267,7 +292,7 @@ Note: a "Lead" means a consultation lead / prospect record in CRM, not a login r
 - Structured data (Schema.org)
 - Bilingual page mapping
 
-### 5.10 Certificate requirements
+### 5.11 Certificate requirements
 
 - Generate certificate from completed course status
 - Student name
